@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Book Rentals System</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book Rentals System for my project in BSD Chula">
+  <meta name="author" content="@ilumin, @yippadedoda">
+
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+  <!-- NAVBAR
+  ================================================== -->
+  <div class="navbar-wrapper">
+    <div class="container">
+
+      <div class="navbar">
+        <div class="navbar-inner">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+
+          <a class="brand" href="dashboard.html">Pugkung Book Rentals</a>
+
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="dashboard.html">Home</a></li>
+              <li class="active"><a href="rent-1.html">Rent</a></li>
+              <li><a href="return-1.html">Return</a></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Book management <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="view-all-book.html">View all books</a></li>
+                  <li><a href="new-book.html">Add new book</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a class="pull-right" href="index.html">Signout</a>
+          </div><!--/.nav-collapse -->
+        </div><!-- /.navbar-inner -->
+      </div><!-- /.navbar -->
+
+    </div> <!-- /.container -->
+  </div><!-- /.navbar-wrapper -->
+
+  <div class="container page-container">
+
+    <div class="row">
+      <div class="span8 offset2">
+        <ul class="nav nav-tabs">
+          <li><a href="rent-1.html"><i class="icon-ok-circle"></i> Step 1: Enter User Number</a></li>
+          <li class="active"><a href="rent-2.html"><i class="icon-ok-circle"></i> Step 2: Enter Book Number</a></li>
+          <li><a href="rent-3.html"><i class="icon-ban-circle"></i> Step 3: Payment</a></li>
+        </ul>
+
+        <div class="rent-step">
+          <h4>Select Book</h4>
+
+          <div class="clearfix">
+            <div class="pull-right"><strong>Date:</strong> 2013-01-07 18:30:00</div>
+            <div class="input-append pull-left">
+              <input type="text" class="span2" placeholder="Enter Book ID">
+              <a href="#add-book" class="btn" data-toggle="modal"><i class="icon-plus"></i> Add Book</a>
+            </div>
+          </div>
+
+          <div class="alert alert-error alert-block">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <h4>Error!</h4>
+            Book ID <strong>1111</strong> (Naruto 13) is not available
+          </div>
+
+          <hr>
+
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Book Name</th>
+                <th>Book Number</th>
+                <th>Book type</th>
+                <th>Price/Rent day</th>
+                <th>&nbsp;</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1111</td>
+                <td>Naruto</td>
+                <td>13</td>
+                <td>Manga</td>
+                <td>4THB / 1day</td>
+                <td>
+                  <a href="#" class="btn btn-mini" title="Remove from list"><i class="icon-remove-sign"></i> Remove</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1111</td>
+                <td>Naruto</td>
+                <td>13</td>
+                <td>Manga</td>
+                <td>4THB / 1day</td>
+                <td>
+                  <a href="#" class="btn btn-mini" title="Remove from list"><i class="icon-remove-sign"></i> Remove</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1111</td>
+                <td>Naruto</td>
+                <td>13</td>
+                <td>Manga</td>
+                <td>4THB / 1day</td>
+                <td>
+                  <a href="#" class="btn btn-mini" title="Remove from list"><i class="icon-remove-sign"></i> Remove</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="form-actions">
+            <a href="rent-1.html" class="btn btn-small pull-left"><i class="icon-chevron-left"></i> Back</a>
+            <a href="rent-3.html" class="btn btn-small pull-right btn-info">Next <i class="icon-chevron-right"></i></a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.container -->
+
+  <!-- FOOTER -->
+  <div class="page-footer">
+    <div class="container">
+      <p class="pull-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2012 Pug Book Rent, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </div>
+  </div>
+  
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>
