@@ -90,5 +90,6 @@ body {
   margin-top: 10px;
 }
 
-.page-container { margin-top: 100px; }
+.page-container .space-top { margin-top: 100px; }
 .rent-step { border: solid 1px #DDD; border-width: 0 1px 1px 1px; margin-top: -20px; padding: 20px; }
+.space { height: 40px; }

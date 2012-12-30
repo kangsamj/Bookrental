@@ -35,8 +35,8 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="dashboard.html">Home</a></li>
-              <li class="active"><a href="rent-1.html">Rent</a></li>
-              <li><a href="return-1.html">Return</a></li>
+              <li><a href="rent-1.html">Rent</a></li>
+              <li class="active"><a href="return-1.html">Return</a></li>
 
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Book management <b class="caret"></b></a>
@@ -60,69 +60,68 @@
     <div class="row">
       <div class="span8 offset2">
         <ul class="nav nav-tabs">
-          <li><a href="rent-1.html"><i class="icon-ok-circle"></i> Step 1: Enter User Number</a></li>
-          <li><a href="rent-2.html"><i class="icon-ok-circle"></i> Step 2: Enter Book Number</a></li>
-          <li class="active"><a href="rent-3.html"><i class="icon-ok-circle"></i> Step 3: Payment</a></li>
+          <li class="active"><a href="return-1.html"><i class="icon-ok-circle"></i> Step 1: Enter User Number</a></li>
+          <li><a href="return-2.html"><i class="icon-ban-circle"></i> Step 2: Check Return Status</a></li>
         </ul>
 
         <div class="rent-step">
-          <h4>Confirm</h4>
+          <h4>Find Member</h4>
 
-          <div class="confirm">
-            <strong class="confirm-label">UserID</strong> 11111<br />
-            <strong class="confirm-label">Name</strong> Teerasak Vichadee<br />
-            <strong class="confirm-label">Rent Date</strong> 2013-01-07 18:30:00<br />
-            <strong class="confirm-label">Return Date</strong> 2013-01-08<br />
+          <form class="form-search">
+            <div class="input-append">
+              <input type="text" class="span4 search-query" placeholder="Enter Member ID/First Name/Last Name">
+              <button type="submit" class="btn"><i class="icon-search"></i></button>
+            </div>
+          </form>
+
+          <hr>
+
+          <div class="well">
+            Enter Member ID to Find Member Information
           </div>
 
-          <table class="table table-striped table-condensed">
+          <hr>
+
+          <div class="alert alert-error">
+            Member not found 
+          </div>
+
+          <hr>
+
+          <table class="table table-striped">
             <thead>
               <tr>
                 <th>ID</th>
-                <th>Book Name</th>
-                <th>Book Number</th>
-                <th>Book type</th>
-                <th>Price/Rent day</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Status</th>
+                <th>&nbsp;</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1111</td>
-                <td>Naruto</td>
-                <td>13</td>
-                <td>Manga</td>
-                <td>4THB / 1day</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td><span><i class="icon-ok"></i></span></td>
+                <td>
+                  <a href="#" class="btn btn-mini"><i class="icon-eye-open"></i> View info</a>
+                </td>
               </tr>
               <tr>
                 <td>1111</td>
-                <td>Naruto</td>
-                <td>13</td>
-                <td>Manga</td>
-                <td>4THB / 1day</td>
-              </tr>
-              <tr>
-                <td>1111</td>
-                <td>Naruto</td>
-                <td>13</td>
-                <td>Manga</td>
-                <td>4THB / 1day</td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td><span title="This user didn't return 3 books yet"><i class="icon-warning-sign"></i></span></td>
+                <td>
+                  <a href="#" class="btn btn-mini"><i class="icon-eye-open"></i> View info</a>
+                </td>
               </tr>
             </tbody>
-            <tfoot>
-              <tr>
-                <td colspan="4" class="summary"><strong>Total Rent day</strong></td>
-                <td>1day</td>
-              </tr>
-              <tr>
-                <td colspan="4" class="summary"><strong>Total Price</strong></td>
-                <td>12THB</td>
-              </tr>
-            </tfoot>
           </table>
 
           <div class="form-actions">
-            <a href="rent-2.html" class="btn btn-small pull-left"><i class="icon-chevron-left"></i> Back</a>
-            <a href="rent-success.html" class="btn btn-small pull-right btn-primary">Confirm</a>
+            <a href="return-2.html" class="btn btn-small pull-right btn-info">Next <i class="icon-chevron-right"></i></a>
           </div>
 
         </div>
