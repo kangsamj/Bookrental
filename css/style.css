@@ -32,7 +32,7 @@ body {
 .form-login {
   width: 320px; height: 90px;
   position: absolute; left: 50%; top: 50%;
-  margin-left: -160px; margin-top: -45px;
+  margin-left: -160px; margin-top: -95px;
 
   background-color: #fff;
   border: 1px solid #e5e5e5;
