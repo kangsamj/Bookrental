@@ -92,4 +92,12 @@ body {
 
 .page-container .space-top { margin-top: 100px; }
 .rent-step { border: solid 1px #DDD; border-width: 0 1px 1px 1px; margin-top: -20px; padding: 20px; }
+.rent-step.success { border-width: 1px; margin-top: 30px; }
+.rent-step.success .form-actions { text-align: center; }
 .space { height: 40px; }
+.table .summary, .table .summary { text-align: right; }
+
+.confirm .confirm-label { display: inline-block; width: 120px; text-align: right; margin-right: 10px; }
+
+.navbar-text { line-height: 50px; }
+.form-actions { margin-bottom: 0; }
