@@ -15,6 +15,11 @@ class Book
         'M0003' => array('bookID'=>'M0003', 'bookName'=>'Dragon Ball', 'bookStatus'=>'Reserved', 'bookPrice'=>'40.00', 'rentPrice'=>'4.00'),
     );
 
+    public function pushBook()
+    {
+        // code
+    }
+
     public static function findBook(string $bookID)
     {
         // find Book
